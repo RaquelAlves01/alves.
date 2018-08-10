@@ -1,0 +1,46 @@
+header {
+  background-color: var(--color-accent);
+  transition: all .1s ease-out;
+  -webkit-transition: all .1s ease-out;
+  -moz-transition: all .1s ease-out;
+}
+
+.logo-name {
+  font-family: var(--font-text);
+  color: var(--color-white);
+  /* -webkit-text-stroke: 1px var(--color-primary-two); */
+  transition: all .6s linear;
+  letter-spacing: 2px;
+  -webkit-transition: all .6s linear;
+  -moz-transition: all .6s linear;
+}
+
+.logo-name span {
+  color: var(--color-primary-one);
+  -webkit-text-stroke: 0px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+header:hover {
+  background-color: var(--color-white);
+  transition: all .1s ease-out;
+  -webkit-transition: all .1s ease-out;
+  -moz-transition: all .1s ease-out;
+}
+
+header:hover .logo-name {
+  color: var(--color-accent);
+}
+
+.intro-sec-container {
+  background-color: var(--color-accent);
+  height: 80vh;
+}
+
+.intro-content h2 {
+  color: var(--color-primary-one);
+  font-family: var(--font-text);
+  letter-spacing: 1.5px;
+  font-size: 5em;
+}
