@@ -1,0 +1,27 @@
+:root {
+  --color-primary-one: #eb344e;
+  --color-primary-light: #eb97a3;
+  --color-primary-two: #1b769e;
+  --color-primary-two-light: #218fbf;
+  --color-contrast: #f8f1b4;
+  --color-accent: #000;
+  --color-neutral: #eee;
+  --color-white: #fff;
+  --color-dark: #777;
+  --font-text: 'Raleway', sans-serif;
+  --font-heading: 'Pacifico', cursive;
+}
+
+a {
+  font-family: var(--font-text);
+  color: var(--color-white);
+}
+
+a span {
+  font-family: var(--font-text);
+  color: var(--color-primary-one);
+}
+
+header:hover a {
+  color: var(--color-accent);
+}
