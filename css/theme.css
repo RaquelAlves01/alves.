@@ -9,19 +9,4 @@
   --color-white: #fff;
   --color-dark: #777;
   --font-text: 'Raleway', sans-serif;
-  --font-heading: 'Pacifico', cursive;
-}
-
-a {
-  font-family: var(--font-text);
-  color: var(--color-white);
-}
-
-a span {
-  font-family: var(--font-text);
-  color: var(--color-primary-one);
-}
-
-header:hover a {
-  color: var(--color-accent);
 }

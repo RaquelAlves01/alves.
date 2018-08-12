@@ -1,3 +1,7 @@
+* {
+  font-family: var(--font-text);
+}
+
 header {
   background-color: var(--color-accent);
   transition: all .1s ease-out;
@@ -5,10 +9,25 @@ header {
   -moz-transition: all .1s ease-out;
 }
 
-.logo-name {
+a {
   font-family: var(--font-text);
   color: var(--color-white);
-  /* -webkit-text-stroke: 1px var(--color-primary-two); */
+  border-bottom: 2px solid transparent;
+  transition: all .6s ease-out;
+  -webkit-transition: all .6s ease-out;
+  -moz-transition: all .6s ease-out;
+}
+
+header:hover a {
+  color: var(--color-accent);
+}
+
+header a:hover {
+  border-bottom: 2px solid var(--color-primary-one);
+}
+
+.logo-name {
+  color: var(--color-white);
   transition: all .6s linear;
   letter-spacing: 2px;
   -webkit-transition: all .6s linear;
@@ -18,7 +37,7 @@ header {
 .logo-name span {
   color: var(--color-primary-one);
   -webkit-text-stroke: 0px;
-  font-size: 1.5em;
+  font-size: 1.9em;
   font-weight: bold;
 }
 
@@ -33,14 +52,31 @@ header:hover .logo-name {
   color: var(--color-accent);
 }
 
-.intro-sec-container {
-  background-color: var(--color-accent);
-  height: 80vh;
+.h-toggle-containter {
+  position: relative;
+  width: 20px;
+  height: 20px;
 }
 
-.intro-content h2 {
-  color: var(--color-primary-one);
-  font-family: var(--font-text);
-  letter-spacing: 1.5px;
-  font-size: 5em;
+.h-toggle {
+  position: absolute;
+  right: 9px;
+  top: 9px;
+}
+
+.h-item1,
+.h-item2,
+.h-item3 {
+  border-bottom: 2px solid var(--color-white);
+  height: 8px;
+  width: 30px;
+  transition: all .6s ease-out;
+  -webkit-transition: all .6s ease-out;
+  -moz-transition: all .6s ease-out;
+}
+
+header:hover .h-toggle > .h-item1,
+header:hover .h-toggle > .h-item2,
+header:hover .h-toggle > .h-item3 {
+  border-color: var(--color-accent);
 }
