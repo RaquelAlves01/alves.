@@ -80,3 +80,21 @@ header:hover .h-toggle > .h-item2,
 header:hover .h-toggle > .h-item3 {
   border-color: var(--color-accent);
 }
+
+/* Homepage */
+.welcome-sec {
+  height: 80vh;
+  /* background: rgba(0, 0, 0, .9); */
+  background-color: var(--color-accent);
+}
+
+.welcome-content h2 {
+  color: var(--color-primary-one);
+  letter-spacing: 8px;
+}
+
+.welcome-content p {
+  color: var(--color-white);
+  padding-right: 16em;
+
+}
